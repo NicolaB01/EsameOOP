@@ -25,7 +25,7 @@ public class Evento  {
 	}
 
 	/**
-	 * costruttore di un evento
+	 * Costruttore di un evento
 	 * 
 	 * @param nome Nome dell'evento 
 	 * @param luogo Luogo dell'evento 
