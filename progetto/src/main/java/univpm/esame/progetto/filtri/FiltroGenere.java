@@ -24,7 +24,7 @@ public class FiltroGenere extends Filtro implements InterfacciaFiltri{
 	
 	/**
 	 * 
-	 * @param generi I generi da filtrare scritte in CSV (separati da virgola)
+	 * @param generi I generi da filtrare scritti in CSV (separati da virgola)
 	 */
 	public FiltroGenere(String generi) {
 		this.genere = this.split(generi);
@@ -33,7 +33,7 @@ public class FiltroGenere extends Filtro implements InterfacciaFiltri{
 	/**
 	 * Divide i generi passati se sono più di uno
 	 * 
-	 * @param generi I generi da filtrare scritte in CSV (separati da virgola)
+	 * @param generi I generi da filtrare scritti in CSV (separati da virgola)
 	 * @return Un vettore di generi da filtrare 
 	 */
 	public String[] split(String generi) {
