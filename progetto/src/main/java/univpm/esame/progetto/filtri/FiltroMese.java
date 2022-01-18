@@ -24,7 +24,7 @@ public class FiltroMese extends Filtro implements InterfacciaFiltri{
 	
 	/**
 	 * 
-	 * @param mesi I mesi da filtrare scritte in CSV (separati da virgola)
+	 * @param mesi I mesi da filtrare scritti in CSV (separati da virgola)
 	 */
 	public FiltroMese(String mesi) {
 		this.mese = this.split(mesi);
@@ -33,7 +33,7 @@ public class FiltroMese extends Filtro implements InterfacciaFiltri{
 	/**
 	 * Divide i mesi passati se sono più di uno
 	 * 
-	 * @param mesi I mesi da filtrare scritte in CSV (separati da virgola)
+	 * @param mesi I mesi da filtrare scritti in CSV (separati da virgola)
 	 * @return Un vettore di mesi da filtrare 
 	 */
 	public String[] split(String mesi) {
