@@ -31,11 +31,11 @@ public class StrumentiMesi {
 	 * @param intMese il numero che corrisponde ad un mese
 	 * @return Il numero di giorni del mese corrispondente
 	 */
-	public int giorniMensili(String intMese) {
+	public int giorniMensili(String nomeMese) {
 
 		for (Mesi m : Mesi.values()) {
 
-			if (m.name().equals(intMese))
+			if (m.name().equals(nomeMese))
 				return m.getGiorni();
 		}
 
