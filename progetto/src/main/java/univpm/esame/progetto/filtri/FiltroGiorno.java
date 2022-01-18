@@ -25,7 +25,7 @@ public class FiltroGiorno extends Filtro implements InterfacciaFiltri{
 	
 	/**
 	 * 
-	 * @param giorni I giorni da filtrare scritte in CSV (separati da virgola)
+	 * @param giorni I giorni da filtrare scritti in CSV (separati da virgola)
 	 */
 	public FiltroGiorno(String giorni) {
 		this.giorno = this.split(giorni);
