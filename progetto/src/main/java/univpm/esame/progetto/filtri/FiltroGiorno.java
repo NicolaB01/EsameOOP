@@ -34,7 +34,7 @@ public class FiltroGiorno extends Filtro implements InterfacciaFiltri{
 	/**
 	 * Divide i giorni passati se sono più di uno
 	 * 
-	 * @param giorni I giorni da filtrare scritte in CSV (separati da virgola)
+	 * @param giorni I giorni da filtrare scritti in CSV (separati da virgola)
 	 * @return Un vettore di giorni da filtrare 
 	 */
 	public String[] split(String giorni) {
