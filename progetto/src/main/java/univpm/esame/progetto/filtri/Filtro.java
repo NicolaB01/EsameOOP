@@ -96,7 +96,6 @@ public class Filtro {
 		this.setEventiFiltrati(this.reader.getRaccolta().getEventi(this.paese));
 		this.filtraRegione(regione);
 		this.filtraGenere(genere);
-		System.out.println(Filtro.eventiFiltrati.size());
 		confronti[indice].setEventiFiltrati(Filtro.eventiFiltrati.size());
 	}
 	
