@@ -31,9 +31,9 @@ public class Pagina {
 	/**
 	 * Costruttore di pagina
 	 * 
-	 * @param elementiTot - il numero di elementi contenuto nel API
-	 * @param totalPage - il numero totale di pagine dell'API
-	 * @param numeroPagina - l numero attuale della pagina dell'evento
+	 * @param elementiTot Il numero di elementi contenuto nel API
+	 * @param totalPage Il numero totale di pagine dell'API
+	 * @param numeroPagina Il numero attuale della pagina dell'evento
 	 */
 	public Pagina(int elementiTot, int totalPage, int numeroPagina) {
 		this.elementiTot = elementiTot;
