@@ -98,7 +98,7 @@ public class StrumentiRegioni {
 			if (rNZ.contains(postalCode))
 				return rNZ.name();
 		}
-		return "nessuno";
+		return "null";
 	}
 
 	/**
