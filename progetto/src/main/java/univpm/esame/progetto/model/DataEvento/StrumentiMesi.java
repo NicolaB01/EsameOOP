@@ -28,7 +28,7 @@ public class StrumentiMesi {
 	/**
 	 * Ridà il numero di giorni del mese passato col suo numero
 	 * 
-	 * @param intMese il numero che corrisponde ad un mese
+	 * @param nomeMese il numero che corrisponde ad un mese
 	 * @return Il numero di giorni del mese corrispondente
 	 */
 	public int giorniMensili(String nomeMese) {
