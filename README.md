@@ -29,7 +29,7 @@ L'applicazione permette :
   * [Rotte Secondarie](https://github.com/NicolaB01/EsameOOP#rotte-secondarie-1)
 - [Eccezioni](https://github.com/NicolaB01/EsameOOP#eccezioni)
 - [JUnit](https://github.com/NicolaB01/EsameOOP#junit-)
-- [Documentazione](https://github.com/NicolaB01/EsameOOP/tree/main/progetto/doc)
+- [Documentazione](https://github.com/NicolaB01/EsameOOP#documentatazione)
 - [Autori](https://github.com/NicolaB01/EsameOOP#Autori)
 
 
@@ -69,7 +69,7 @@ Per poter effettuare la chiamata tutte le rotte devono essere precedute da:
 
 | **Tipo**      | **Rotta**    | **Descrizione**                |
 | :-------- | :------- | :------------------------- |
-| `GET` |  [ *`/eventi `*](https://github.com/NicolaB01/EsameOOP#eventi) | Restituisce un confronto degli eventi avvenuti in Nuova Zelanda e in Polonia|
+| `GET` |  [ *`/eventi `*](https://github.com/NicolaB01/EsameOOP#eventi) | Restituisce un confronto degli eventi programmati in Nuova Zelanda e in Polonia|
 | `GET` | [*`/statistiche`*](https://github.com/NicolaB01/EsameOOP#statistiche) | Restituisce un confronto delle statistiche ottenute dagli eventi della Polonia e della Nuova Zelanda | 
 
 ***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***
@@ -140,7 +140,7 @@ Il JSON di ritorno , *confronto*, è formato da una coppia di JSON, uno per la P
 ***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***    
         
 ## */statistiche* 
-Questa rotta permette all'utente finale di visualizzare le statistiche di entrambi i paesi, Polonia e in Nuova Zelanda.
+Questa rotta permette all'utente finale di visualizzare le statistiche di entrambi i paesi, Polonia e Nuova Zelanda.
 Non sono richiesti parametri per questa chiamata.
 È stato scelto di ridurre il numero per rende il JSON a scopo illustrativo più leggibile.
 
