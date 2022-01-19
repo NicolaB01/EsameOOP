@@ -73,12 +73,11 @@ public class Statistiche {
 	
 	private void impostaStatistiche(String paese, String regioni) throws ExceptionRegioneInesistente, ExceptionPaeseInesistente, ExceptionListaVuota {
 		Statistiche.reader.getRaccolta().getEventi(paese).clear();
-		new StrumentiRegioni().controlloRegioni(paese, regioni);
 		if (this.èUnPaeseControllato(paese)) {
 			Statistiche.reader.parser(paese);
 			this.statistiche = new JSONObjectStatistiche();
 			this.statistiche.setPaese(paese);	
-			this.statistiche.setRegioni(this.regioniDivise(regioni));
+			this.statistiche.setRegioni(this.regioniDivise(regioni, paese));
 			this.statistiche.setEventi(new NumTotEventi().getEventiTot(paese, regioni));
 			this.statistiche.setSegmenti(new EventiPerSegmento().getEventiPerSegmento(paese, regioni));
 			this.statistiche.setAnni(new NumEventiMensili().getEventiMensili(paese, regioni));
@@ -86,12 +85,12 @@ public class Statistiche {
 			
 		}
 	}
-	
-	
-	private List<String> regioniDivise(String regioni) {
+
+	private List<String> regioniDivise(String regioni, String paese) throws ExceptionRegioneInesistente, ExceptionPaeseInesistente {
 		List<String> temp = new Vector<>();
 		String[] regione = new FiltroRegione().split(regioni);
 		for(int i = 0; i < regione.length; i++) {
+			new StrumentiRegioni().controlloRegioni(paese, regione[i].trim());
 			temp.add(regione[i]);
 		}
 		return temp;
