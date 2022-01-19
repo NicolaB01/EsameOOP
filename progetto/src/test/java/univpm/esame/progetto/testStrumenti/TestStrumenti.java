@@ -24,7 +24,7 @@ class TestStrumenti {
 	@DisplayName("Controllo che il convertitore da int a mese funzioni")
 	void testConvertitoreToMesi() throws ExceptionListaVuota {
 		String meseInt = "01";
-		String meseString = new StrumentiMesi().toMesi(meseInt);
+		String meseString = new StrumentiMesi().intToMesi(meseInt);
 
 		assertEquals("Gennaio", meseString);
 	}
