@@ -24,12 +24,12 @@ L'applicazione permette :
 # Indice
 
 * [Installazione](https://github.com/NicolaB01/EsameOOP#Installazione)
-* [Rotte](https://github.com/NicolaB01/EsameOOP#Rotte)
+* [Rotte](https://github.com/NicolaB01/EsameOOP#rotte-%EF%B8%8F-)
   * [Rotte Principali](https://github.com/NicolaB01/EsameOOP#rotte-principali-1)
   * [Rotte Secondarie](https://github.com/NicolaB01/EsameOOP#rotte-secondarie-1)
-- [Eccezioni]()
-- [JUnit](https://github.com/NicolaB01/EsameOOP#JUnit)
-- [Documantazione]()
+- [Eccezioni](https://github.com/NicolaB01/EsameOOP#eccezioni)
+- [JUnit](https://github.com/NicolaB01/EsameOOP#junit-)
+- [Documentazione]()
 - [Autori](https://github.com/NicolaB01/EsameOOP#Autori)
 
 
@@ -58,16 +58,16 @@ Per poter effettuare la chiamata tutte le rotte devono essere precedute da:
 ```
 
 ### Le rotte messe a disposizione dal programma si dividono in due categorie:
-- ####  [Rotte Principali](https://github.com/NicolaB01/testGIT#rotte-principali-1)
-- ####  [Rotte Secondarie](https://github.com/NicolaB01/testGIT#rotte-secondarie-1)
+- ####  [Rotte Principali](https://github.com/NicolaB01/EsameOOP#rotte-principali-1)
+- ####  [Rotte Secondarie](https://github.com/NicolaB01/EsameOOP#rotte-principali-1)
 
 
 # Rotte Principali
 
 | **Tipo**      | **Rotta**    | **Descrizione**                |
 | :-------- | :------- | :------------------------- |
-| `GET` |  [ *`/eventi `*](https://github.com/NicolaB01/EsameOOP#1eventi) | Restituisce un confronto degli eventi avvenuti in Nuova Zelanda e in Polonia|
-| `GET` | [*`/statistiche`*](https://github.com/NicolaB01/EsameOOP/blob/master/README.md#3statistiche) | Restituisce un confronto delle statistiche ottenute dagli eventi della Polonia e della Nuova Zelanda | 
+| `GET` |  [ *`/eventi `*](https://github.com/NicolaB01/EsameOOP#eventi) | Restituisce un confronto degli eventi avvenuti in Nuova Zelanda e in Polonia|
+| `GET` | [*`/statistiche`*](https://github.com/NicolaB01/EsameOOP#statistiche) | Restituisce un confronto delle statistiche ottenute dagli eventi della Polonia e della Nuova Zelanda | 
 
 
 ## */eventi*
@@ -335,11 +335,11 @@ Il JSON di ritorno è formato da una coppia di JSON, uno per la Polonia e uno pe
 
 # Rotte Secondarie 
 
-| Tipo      | Rotta    | Descrizione                |
+| **Tipo**      | **Rotta**    | **Descrizione**                |
 | :-------- | :------- | :------------------------- |
-| `GET` | `/eventi/{paese}` | Restituisce una lista di eventi di un determinato paese|
-| `GET` | `/statistiche/{paese}` | Restituisce le statistiche ottenute dagli eventi di un determinato paese | 
-| `GET` | `/statistiche/{paese}/{regione}` | Restituisce le statistiche ottenute dagli eventi di una o più regioni di un determinato paese | 
+| `GET` | [*`/eventi/{paese}`*](https://github.com/NicolaB01/EsameOOP#eventipaese) | Restituisce una lista di eventi di un determinato paese|
+| `GET` | [*`/statistiche/{paese}`*](https://github.com/NicolaB01/EsameOOP#statistichepaese-) | Restituisce le statistiche ottenute dagli eventi di un determinato paese | 
+| `GET` | [*`/statistiche/{paese}/{regione}`*]() | Restituisce le statistiche ottenute dagli eventi di una o più regioni di un determinato paese | 
 
 
 
@@ -445,7 +445,7 @@ Il JSON di ritorno è formato da una lista di eventi ognuno dei quali presenta l
   
 
 
-## */statistiche/{paese}* 📊📊
+## */statistiche/{paese}*
 Questa rotta permette all'utente finale di visualizzare le statistiche complessive calcolate sugli eventi programmati in un determinato paese , Polonia o Nuova Zelanda.
 Non sono richiesti parametri per questa chiamata.
 È stato scelto di ridurre il numero per rende il JSON a scopo illustrativo più leggibile.
@@ -560,7 +560,7 @@ Il JSON di ritorno è strutturato come segue :
                 - media : media calcolata tra il numero totale di eventi mensili e il numero dei giorni del mese
 
 
-## *statistiche/{paese}/{regione}* 📊📊
+## *statistiche/{paese}/{regione}*
 Questa rotta permette all'utente finale di visualizzare le statistiche complessive calcolate sugli eventi programmati in una o più regioni di un determinato paese, Polonia o Nuova Zelanda.
 Non sono richiesti parametri per questa chiamata.
 ![Schermata 2022-01-19 alle 23 50 19](https://user-images.githubusercontent.com/95362468/150231105-f8977c94-5315-4520-ad57-a36c66dc84ec.png)
