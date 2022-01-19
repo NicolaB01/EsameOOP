@@ -14,7 +14,7 @@ public class Pagina {
 	/**
 	 * Dimensione predefinita, corrisponde al numero di eventi per pagina
 	 */
-	public final static int SIZE = 20;
+	public final static int SIZE = 200;
 	
 	/**
 	 * Pagina iniziale(0) 
