@@ -1,6 +1,6 @@
 
 
-# <p align="center"> Ticketmaster per la Polonia e la Nuova Zelanda 🇵🇱 🇳🇿 </p>
+# <p align="center"> 🇵🇱  Ticketmaster per la Polonia e la Nuova Zelanda 🇳🇿 </p>
 
 # Progetto d'esame di Programmazione a oggetti 2021/2022 📚📚
 
@@ -29,7 +29,7 @@ L'applicazione permette :
   * [Rotte Secondarie](https://github.com/NicolaB01/EsameOOP#rotte-secondarie-1)
 - [Eccezioni](https://github.com/NicolaB01/EsameOOP#eccezioni)
 - [JUnit](https://github.com/NicolaB01/EsameOOP#junit-)
-- [Documentazione]()
+- [Documentazione](https://github.com/NicolaB01/EsameOOP/tree/main/progetto/doc)
 - [Autori](https://github.com/NicolaB01/EsameOOP#Autori)
 
 
@@ -48,6 +48,7 @@ Inoltre bisogna ottenere la propria *API-KEY* disponibile gratuitamente iscriven
 ```
 Infine bisogna avviare l'applicazione eseguendo la classe [ProgettoApplication.java](https://github.com/NicolaB01/EsameOOP/blob/main/progetto/src/main/java/univpm/esame/progetto/ProgettoApplication.java) come SpringBootApplication.
     
+***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***
 
 # Rotte ✈️ 📍
 
@@ -56,11 +57,13 @@ Per poter effettuare la chiamata tutte le rotte devono essere precedute da:
 ```bash
  http://localhost:8080
 ```
+***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***
 
 ### Le rotte messe a disposizione dal programma si dividono in due categorie:
 - ####  [Rotte Principali](https://github.com/NicolaB01/EsameOOP#rotte-principali-1)
 - ####  [Rotte Secondarie](https://github.com/NicolaB01/EsameOOP#rotte-principali-1)
 
+***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***
 
 # Rotte Principali
 
@@ -69,6 +72,7 @@ Per poter effettuare la chiamata tutte le rotte devono essere precedute da:
 | `GET` |  [ *`/eventi `*](https://github.com/NicolaB01/EsameOOP#eventi) | Restituisce un confronto degli eventi avvenuti in Nuova Zelanda e in Polonia|
 | `GET` | [*`/statistiche`*](https://github.com/NicolaB01/EsameOOP#statistiche) | Restituisce un confronto delle statistiche ottenute dagli eventi della Polonia e della Nuova Zelanda | 
 
+***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***
 
 ## */eventi*
 
@@ -133,9 +137,8 @@ Il JSON di ritorno , *confronto*, è formato da una coppia di JSON, uno per la P
 -  **generi** :  Lista contenente il nome dei generi filtrate seguito dal numero di eventi per uno specifico genere
       - *Nome del genere* : numero di eventi totali del genere
 
-            
+***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***    
         
-
 ## */statistiche* 
 Questa rotta permette all'utente finale di visualizzare le statistiche di entrambi i paesi, Polonia e in Nuova Zelanda.
 Non sono richiesti parametri per questa chiamata.
@@ -332,16 +335,17 @@ Il JSON di ritorno è formato da una coppia di JSON, uno per la Polonia e uno pe
                 - min : numero minimo di eventi in un giorno del mese in cui avvengono eventi
                 - media : media calcolata tra il numero totale di eventi mensili e il numero dei giorni del mese
     
+***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***
 
 # Rotte Secondarie 
 
 | **Tipo**      | **Rotta**    | **Descrizione**                |
 | :-------- | :------- | :------------------------- |
 | `GET` | [*`/eventi/{paese}`*](https://github.com/NicolaB01/EsameOOP#eventipaese) | Restituisce una lista di eventi di un determinato paese|
-| `GET` | [*`/statistiche/{paese}`*](https://github.com/NicolaB01/EsameOOP#statistichepaese-) | Restituisce le statistiche ottenute dagli eventi di un determinato paese | 
-| `GET` | [*`/statistiche/{paese}/{regione}`*]() | Restituisce le statistiche ottenute dagli eventi di una o più regioni di un determinato paese | 
+| `GET` | [*`/statistiche/{paese}`*](https://github.com/NicolaB01/EsameOOP/blob/main/README.md#statistichepaese) | Restituisce le statistiche ottenute dagli eventi di un determinato paese | 
+| `GET` | [*`/statistiche/{paese}/{regione}`*](https://github.com/NicolaB01/EsameOOP/blob/main/README.md#statistichepaeseregione) | Restituisce le statistiche ottenute dagli eventi di una o più regioni di un determinato paese | 
 
-
+***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***
 
 ## */eventi/{paese}*
 
@@ -442,8 +446,7 @@ Il JSON di ritorno è formato da una lista di eventi ognuno dei quali presenta l
   - *numeroPagina* : numero della pagina corrente in cui è contenuto l'evento nella rotta di TicketMaster
   - *paginaSuccessiva* : numero della pagina successiva a quella corrente
     
-  
-
+***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***
 
 ## */statistiche/{paese}*
 Questa rotta permette all'utente finale di visualizzare le statistiche complessive calcolate sugli eventi programmati in un determinato paese , Polonia o Nuova Zelanda.
@@ -559,6 +562,7 @@ Il JSON di ritorno è strutturato come segue :
                 - min : numero minimo di eventi in un giorno del mese in cui avvengono eventi
                 - media : media calcolata tra il numero totale di eventi mensili e il numero dei giorni del mese
 
+***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***
 
 ## *statistiche/{paese}/{regione}*
 Questa rotta permette all'utente finale di visualizzare le statistiche complessive calcolate sugli eventi programmati in una o più regioni di un determinato paese, Polonia o Nuova Zelanda.
@@ -648,23 +652,33 @@ Il JSON di ritorno è strutturato come segue :
                 - min : numero minimo di eventi in un giorno del mese in cui avvengono eventi
                 - media : media calcolata tra il numero totale di eventi mensili e il numero dei giorni del mese
 
+***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***
 
 # Eccezioni
 L'applicazione permette di gestire tre eccezioni personalizzate : 
 - [**ExceptionPaeseInesistente**](https://github.com/NicolaB01/EsameOOP/blob/main/progetto/src/main/java/univpm/esame/progetto/eccezioni/ExceptionPaeseInesistente.java) : Questa eccezione viene lanciata quando l'utente immette come variabile di percorso un paese che non coincide con Polonia o Nuova Zelanda.                                                  
-Le rotte che possono lanciare questa eccezione sono: */eventi/{paese}*, */statistiche/{paese}*, */statistiche/{paese}/{regione}*.
+Le rotte che possono lanciare questa eccezione sono: 
+- */eventi/{paese}* 
+- */statistiche/{paese}*
+- */statistiche/{paese}/{regione}*.
 ![image](https://user-images.githubusercontent.com/93011457/150129046-4eec07af-2db1-40a9-b54a-bdd25c7cd365.png)
 
 - [**ExceptionRegioneInesistente**](https://github.com/NicolaB01/EsameOOP/blob/main/progetto/src/main/java/univpm/esame/progetto/eccezioni/ExceptionRegioneInesistente.java) : Questa eccezione viene lanciata quando l'utente immette come variabile di percorso una regione che non coincide con una delle regioni della Polonia o Nuova Zelanda.                              
-Le rotte che possono lanciare questa eccezione sono: */eventi/{paese}*, */statistiche/{paese}/{regione}*.
+Le rotte che possono lanciare questa eccezione sono: 
+- */eventi/{paese}* 
+- */statistiche/{paese}/{regione}*.
 ![Schermata 2022-01-19 alle 13 26 43](https://user-images.githubusercontent.com/93011457/150129450-a6314695-1e10-4581-a3cc-63bd44a55da1.png)
 
 - [**ExceptionListaVuota**](https://github.com/NicolaB01/EsameOOP/blob/main/progetto/src/main/java/univpm/esame/progetto/eccezioni/ExceptionListaVuota.java) : Questa eccezione viene lanciata quando non ci sono eventi che soddifsfano i parametri che si vogliono filtrare.             
-Le rotte che possono lanciare questa eccezione sono: */eventi*, */eventi/{paese}*.
+Le rotte che possono lanciare questa eccezione sono: 
+- */eventi* 
+- */eventi/{paese}*.
 ![Schermata 2022-01-19 alle 13 31 08](https://user-images.githubusercontent.com/93011457/150129890-56a05ae0-4cab-42d4-8284-82554885d027.png)
 
 Le nostre eccezioni vengono gestite dalla classe [**GestoreEccezioni**](https://github.com/NicolaB01/EsameOOP/blob/main/progetto/src/main/java/univpm/esame/progetto/controller/GestoreEccezioni.java)
 
+
+***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***
 
 # JUnit 🧮
 I test unitari sono stati divisi in 4 package ognuno dei quali contiene una classe : 
@@ -676,7 +690,7 @@ I test unitari sono stati divisi in 4 package ognuno dei quali contiene una clas
    - [TestStrumenti](https://github.com/NicolaB01/EsameOOP/tree/main/progetto/src/test/java/univpm/esame/progetto/testStrumenti)
       - Classe di test per verificare il corretto funzionamento di alcune classi di supporto 
 - univpm.esame.progetto.testFiltro
-   - [TestFiltro](https://github.com/NicolaB01/EsameOOP/tree/main/progetto/src/test/java/univpm/esame/progetto/testFiltro)
+   - [TestFiltri](https://github.com/NicolaB01/EsameOOP/tree/main/progetto/src/test/java/univpm/esame/progetto/testFiltri)
       - Classe di test per verificare il corretto funzionamento dei metodi che effetuano un filtro
 - univpm.esame.progetto.testStatistiche
    - [TestStatistiche](https://github.com/NicolaB01/EsameOOP/tree/main/progetto/src/test/java/univpm/esame/progetto/testStatistiche)
