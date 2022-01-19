@@ -449,7 +449,7 @@ Il JSON di ritorno è formato da una lista di eventi ognuno dei quali presenta l
 ***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***
 
 ## */statistiche/{paese}*
-Questa rotta permette all'utente finale di visualizzare le statistiche complessive calcolate sugli eventi programmati in un determinato paese , Polonia o Nuova Zelanda.
+Questa rotta permette all'utente finale di visualizzare le statistiche complessive calcolate sugli eventi programmati in un determinato paese , Polonia o Nuova Zelanda.       
 Non sono richiesti parametri per questa chiamata.
 È stato scelto di ridurre il numero per rende il JSON a scopo illustrativo più leggibile.
 
@@ -657,22 +657,22 @@ Il JSON di ritorno è strutturato come segue :
 # Eccezioni
 L'applicazione permette di gestire tre eccezioni personalizzate : 
 - [**ExceptionPaeseInesistente**](https://github.com/NicolaB01/EsameOOP/blob/main/progetto/src/main/java/univpm/esame/progetto/eccezioni/ExceptionPaeseInesistente.java) : Questa eccezione viene lanciata quando l'utente immette come variabile di percorso un paese che non coincide con Polonia o Nuova Zelanda.                                                  
-Le rotte che possono lanciare questa eccezione sono: 
-- */eventi/{paese}* 
-- */statistiche/{paese}*
-- */statistiche/{paese}/{regione}*.
+     Le rotte che possono lanciare questa eccezione sono: 
+   -  */eventi/{paese}* 
+   -  */statistiche/{paese}*
+   -  */statistiche/{paese}/{regione}*.
 ![image](https://user-images.githubusercontent.com/93011457/150129046-4eec07af-2db1-40a9-b54a-bdd25c7cd365.png)
 
-- [**ExceptionRegioneInesistente**](https://github.com/NicolaB01/EsameOOP/blob/main/progetto/src/main/java/univpm/esame/progetto/eccezioni/ExceptionRegioneInesistente.java) : Questa eccezione viene lanciata quando l'utente immette come variabile di percorso una regione che non coincide con una delle regioni della Polonia o Nuova Zelanda.                              
-Le rotte che possono lanciare questa eccezione sono: 
-- */eventi/{paese}* 
-- */statistiche/{paese}/{regione}*.
+- [**ExceptionRegioneInesistente**](https://github.com/NicolaB01/EsameOOP/blob/main/progetto/src/main/java/univpm/esame/progetto/eccezioni/ExceptionRegioneInesistente.java) : Questa eccezione viene lanciata quando l'utente immette come variabile di percorso una regione che non coincide con una delle regioni della Polonia o Nuova Zelanda.                                     
+    Le rotte che possono lanciare questa eccezione sono: 
+   -  */eventi/{paese}* 
+   -  */statistiche/{paese}/{regione}*.
 ![Schermata 2022-01-19 alle 13 26 43](https://user-images.githubusercontent.com/93011457/150129450-a6314695-1e10-4581-a3cc-63bd44a55da1.png)
 
 - [**ExceptionListaVuota**](https://github.com/NicolaB01/EsameOOP/blob/main/progetto/src/main/java/univpm/esame/progetto/eccezioni/ExceptionListaVuota.java) : Questa eccezione viene lanciata quando non ci sono eventi che soddifsfano i parametri che si vogliono filtrare.             
-Le rotte che possono lanciare questa eccezione sono: 
-- */eventi* 
-- */eventi/{paese}*.
+    Le rotte che possono lanciare questa eccezione sono: 
+   -  */eventi* 
+   -  */eventi/{paese}*.
 ![Schermata 2022-01-19 alle 13 31 08](https://user-images.githubusercontent.com/93011457/150129890-56a05ae0-4cab-42d4-8284-82554885d027.png)
 
 Le nostre eccezioni vengono gestite dalla classe [**GestoreEccezioni**](https://github.com/NicolaB01/EsameOOP/blob/main/progetto/src/main/java/univpm/esame/progetto/controller/GestoreEccezioni.java)
@@ -700,11 +700,13 @@ Non sono stati riportati **error** tuttavia possono essere riportati **failure**
 
 ![Schermata 2022-01-19 alle 10 43 34](https://user-images.githubusercontent.com/95362468/150105271-3adf63d1-24b7-4354-9b88-78f4104bf5f8.png)
 
+***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***
 
 
 # Documentatazione
-Tutto il programma è documentato nella [Javadoc](file:///C:/Users/Nicola/eclipse-workspace/progetto/doc/allclasses-index.html)
+Tutto il programma è documentato nella [Javadoc](https://github.com/NicolaB01/EsameOOP/tree/main/progetto/doc)
 
+***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***
 
 # Autori
 | Cognome e Nome | Email Istituzionali       |
@@ -712,3 +714,4 @@ Tutto il programma è documentato nella [Javadoc](file:///C:/Users/Nicola/eclips
 | `Biagioli Nicola` | S1099740@studenti.univpm.it |
 | `Di Battista Simone` | S1098060@studenti.univpm.it |
 
+***Per tornare all'[indice](https://github.com/NicolaB01/EsameOOP#indice).***
