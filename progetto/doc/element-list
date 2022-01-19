@@ -1,0 +1,17 @@
+univpm.esame.progetto
+univpm.esame.progetto.controller
+univpm.esame.progetto.eccezioni
+univpm.esame.progetto.filtri
+univpm.esame.progetto.jsonObject
+univpm.esame.progetto.jsonObject.JSONObjectFiltri
+univpm.esame.progetto.jsonObject.JSONObjectStatistiche
+univpm.esame.progetto.model
+univpm.esame.progetto.model.Classificazioni
+univpm.esame.progetto.model.DataEvento
+univpm.esame.progetto.model.LuogoEvento
+univpm.esame.progetto.parsing
+univpm.esame.progetto.statistiche
+univpm.esame.progetto.testEccezioni
+univpm.esame.progetto.testFiltri
+univpm.esame.progetto.testStatistiche
+univpm.esame.progetto.testStrumenti
