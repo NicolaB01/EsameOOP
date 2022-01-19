@@ -36,7 +36,7 @@ class TestStatistiche {
 	 * @throws ExceptionRegioneInesistente Viene lanciata quando la regione passata come argomento non è presente fra le regioni del paese passato
 	 */
 	@Test
-	@DisplayName("Controllo eventi totali nelle statistiche paese(Polonia)")
+	@DisplayName("Controllo eventi totali nelle statistiche della regione Wellington della Nuova Zelanda")
 	void testStatisticheRegione() throws ExceptionListaVuota, ExceptionPaeseInesistente, ExceptionRegioneInesistente {
 		assertEquals(9, new Statistiche("NuovaZelanda","Wellington").getStatistiche().getEventi());
 	}
